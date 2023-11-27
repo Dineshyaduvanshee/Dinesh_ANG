@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter in angular js</title>
+    <script src="angular.min.js"></script>
+    <script src="module6.js"></script>
+</head>
+<body ng-controller="myController">
+    <input type="text" placeholder="Enter your fruit" ng-model="search">
+    <ul ng-repeat="fruit in fruits | filter:search">
+        {{fruit}}
+    </ul>
+    <br>
+    <input type="text" placeholder="Enter a Student Name" ng-model="student">
+    
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+        </tr>
+        <tr ng-repeat="std in students | filter:student:true">
+            <td>{{std.name}}</td>
+            <td>{{std.gender}}</td>
+            <td>{{std.class}}</td>
+        </tr>
+
+    </table>
+    <br>
+    <input type="text" placeholder="Enter Student Name" ng-model="student2">
+    
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+        </tr>
+        <tr ng-repeat="std in students | filter:student2">
+            <td>{{std.name}}</td>
+            <td>{{std.gender}}</td>
+            <td>{{std.class}}</td>
+        </tr>
+
+    </table>
+    <br>
+    <input type="text" placeholder="Enter Student Name or Gender" ng-model="gender">
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+        </tr>
+        <tr ng-repeat="std in students | filter:{'name':student2,'gender':male}">
+            <td>{{std.name}}</td>
+            <td>{{std.gender}}</td>
+            <td>{{std.class}}</td>
+        </tr>
+        
+    </table>
+</body>
+</html>
