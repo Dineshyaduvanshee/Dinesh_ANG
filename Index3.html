@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="angular.min.js"></script>
+    <script src="module1.js"></script>
+</head>
+<body ng-controller="MyController">
+    <div>
+        <h2>{{name}}</h2>
+        <input type="text" ng-model="name2">
+        <br><br>
+        <h2>{{name2}}</h2>
+    </div>
+    <div>
+        {{name}}
+    </div>
+    <div>
+        <table border="1">
+            <tr>
+                <td>Name</td>
+                <td><input type="text" ng-model="student.name"></td>           
+            </tr>
+            <tr>
+                <td>Surname</td>
+                <td><input type="text" ng-model="student.surname"></td>        
+            </tr>
+            <tr>
+                <td>City</td>
+                <td><input type="text" ng-model="student.city"></td>
+            </tr>
+        </table>
+        <br><br>
+        <table border="1">
+            <tr>
+                <td>Name</td>
+                <td>{{student.name}}</td>           
+            </tr>
+            <tr>
+                <td>Surname</td>
+                <td>{{student.surname}}</td>        
+            </tr>
+            <tr>
+                <td>City</td>
+                <td>{{student.city}}</td>
+            </tr>
+        </table>
+        
+    </div>
+</body>
+</html>

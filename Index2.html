@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width", initial-scale="1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+</head>
+<body>
+    <div ng-init="name='Dinesh'; age=23">
+        <h2 ng-bind="name">  </h2>
+        <h2 ng-bind="age"></h2>
+    </div>
+    <hr>
+    <div ng-init="colors=['red','blue','yellow','voilet','indigo']">
+        <h2 ng-bind="colors"></h2>
+        <h2>{{colors}}</h2>
+        <h2>{{colors[0]}}</h2>
+        <h2>{{colors[1]}}</h2>
+        <h2>{{colors[2]}}</h2>
+        <h2>{{colors[3]}}</h2>
+        <h2>{{colors[4]}}</h2>
+    </div>
+    <hr>
+    <div ng-init="obj={name:'dinesh',age:23,height:5.11}">
+        <h2>{{obj.name}}</h2>
+        <h2>{{obj.age}}</h2>
+        <h2>{{obj.height}}</h2>
+    </div>
+    <hr>
+    <div ng-init="students=[
+        {name:'dinesh',class:'mca',gender:'male'},
+        {name:'mahesh',class:'graduation',gender:'male'},
+        {name:'ritesh',class:'12th',gender:'male'}
+    ]">
+        <h2>{{ students[0].name }}</h2>
+        <h2>{{ students[0].class }}</h2>
+        <h2>{{ students[0].gender }}</h2>
+        
+        <h2>{{ students[1].name }}</h2>
+        <h2>{{ students[1].class }}</h2>
+        <h2>{{ students[1].gender }}</h2>
+        
+        <h2>{{ students[2].name }}</h2>
+        <h2>{{ students[2].class }}</h2>
+        <h2>{{ students[2].gender }}</h2>
+    </div>
+    <hr>
+    <div ng-init="quantity=1; price=5;">
+        Quantity : <input type="number" ng-model="quantity">
+        <br>
+        Price : <input type="number" ng-model="price">  
+        <br><br>
+        Total Amount is : {{ quantity * price}}
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order Filter</title>
+    <script src="angular.min.js"></script>
+    <script src="module5.js"></script>
+</head>
+<body ng-controller="myController">
+    <ul>
+        <li ng-repeat="item in name | orderBy:'-' ">
+            {{item}}
+        </li>
+        <hr>
+        <li ng-repeat="item in name | orderBy ">
+            {{item}}
+        </li>
+    </ul>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+        </tr>
+        <tr ng-repeat="emp in employees | orderBy">
+            <td>{{emp.Name}}</td>
+            <td>{{emp.City}}</td>
+            <td>{{emp.Age}}</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+        </tr>
+        <tr ng-repeat="emp in employees | orderBy:'-'">
+            <td>{{emp.Name}}</td>
+            <td>{{emp.City}}</td>
+            <td>{{emp.Age}}</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+        </tr>
+        <tr ng-repeat="emp in employees | orderBy:'Name'">
+            <td>{{emp.Name}}</td>
+            <td>{{emp.City}}</td>
+            <td>{{emp.Age}}</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+        </tr>
+        <tr ng-repeat="emp in employees | orderBy:'City'">
+            <td>{{emp.Name}}</td>
+            <td>{{emp.City}}</td>
+            <td>{{emp.Age}}</td>
+        </tr>
+    </table>
+    <hr>
+    <table border="1">
+        <tr>
+            <th ng-click="myFunction('Name')">Name</th>
+            <th ng-click="myFunction('City')">City</th>
+            <th ng-click="myFunction('Age')">Age</th>
+        </tr>
+        <tr ng-repeat="emp in employees | orderBy:'Age'">
+            <td>{{emp.Name}}</td>
+            <td>{{emp.City}}</td>
+            <td>{{emp.Age}}</td>
+        </tr>
+    </table>
+</body>
+</html> 

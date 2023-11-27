@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="module2.js"></script>
+</head>
+<body ng-controller="MyController">
+    <input type="text" ng-focus="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+    <input type="text" ng-blur="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+</body>
+</html>

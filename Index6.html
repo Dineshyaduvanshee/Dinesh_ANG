@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="module2.js"></script>
+</head>
+<body ng-controller="MyController">
+    <input type="text" ng-keydown="myFunction()" placeholder="ng-keydown">
+    <br><br>
+    <h2>{{number}}</h2>
+
+    <input type="text" ng-keypress="myFunction()" placeholder="ng-keypress">
+    <br><br>
+    <h2>{{number}}</h2>
+
+    <input type="text" ng-keyup="myFunction()" placeholder="ng-keydown">
+    <br><br>
+    <h2>{{number}}</h2>
+
+    <input type="text" ng-copy="myFunction()" placeholder="ng-copy">
+    <br><br>
+    <h2>{{number}}</h2>
+
+    <input type="text" ng-cut="myFunction()" placeholder="ng-cut">
+    <br><br>
+    <h2>{{number}}</h2>
+
+    <input type="text" ng-paste="myFunction()" placeholder="ng-paste">
+    <br><br>
+    <h2>{{number}}</h2>
+</body>
+</html>

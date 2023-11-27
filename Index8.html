@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="module3.js"></script>
+</head>
+<body ng-controller="MyController">
+    <ol>
+        <li ng-repeat="item in fruits "> {{item}}</li>
+        <li ng-repeat="(x,y) in student">{{x}}={{y}}</li>
+    </ol>
+    <h3 ng-repeat="item in fruits">
+        {{item}}
+    </h3>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>City</th>
+            <th>Age</th>
+        </tr>
+        <tr ng-repeat="emp in employee">
+            <td>{{emp.name}}</td>
+            <td>{{emp.city}}</td>
+            <td>{{emp.age}}</td>
+        </tr>
+    </table>
+</body>
+</html>

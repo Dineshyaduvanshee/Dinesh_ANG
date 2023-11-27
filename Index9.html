@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="module4.js"></script>
+</head>
+<body ng-controller="myController">
+    <h2>{{name | lowercase}}</h2>
+    <h2>{{name | uppercase}}</h2>
+    <h2>{{amount | number:2}}</h2>
+    
+    <h2>{{amount | currency}}</h2>
+    <h2>{{amount | currency:"&euro;"}}</h2>
+    <h2>{{amount | currency:"Rs"}}</h2>
+    <hr>
+    <h2>{{myDate | date}}</h2>
+    <hr>
+    <h2>{{myDate | date:"MMMM"}}</h2>
+    <h2>{{myDate | date:"MMM"}}</h2>
+    <h2>{{myDate | date:"MM"}}</h2>
+    <h2>{{myDate | date:"M"}}</h2>
+    <hr>
+    <h2>{{myDate | date:"yyyy"}}</h2>
+    <h2>{{myDate | date:"yy"}}</h2>
+    <h2>{{myDate | date:"y"}}</h2>
+    <h2>{{myDate | date:"dd"}}</h2>
+    <h2>{{myDate | date:"d"}}</h2>
+    <hr>
+    <h2>{{myDate | date:"EEE"}}</h2>
+    <h2>{{myDate | date:"EEEE"}}</h2>
+    <h2>{{myDate | date:"dd/mm/y"}}</h2>
+    <h2>{{myDate | date:"dd-mm-y"}}</h2>
+    <hr>
+    <h2>{{myDate | date:"HH"}}</h2>
+    <h2>{{myDate | date:"H"}}</h2>
+    <h2>{{myDate | date:"hh"}}</h2>
+    <h2>{{myDate | date:"mm"}}</h2>
+    <h2>{{myDate | date:"m"}}</h2>
+    <hr>
+    <h2>{{myDate | date:"ss"}}</h2>
+    <h2>{{myDate | date:"s"}}</h2>
+    <h2>{{myDate | date : "sss"}}</h2>
+    <h2>{{myDate | date : "a"}}</h2>
+    <hr>
+    <h2>{{myDate | date : "hh:mm:ss:a"}}</h2>
+    <hr>
+    <h2>{{myDate | date : "short"}}</h2>
+    <hr>
+    <h2>{{myDate | date : "medium"}}</h2>
+    <h2>{{myDate | date : "shortDate"}}</h2>
+    <h2>{{myDate | date : "mediumDate"}}</h2>
+    <h2>{{myDate | date : "longDate"}}</h2>
+    <h2>{{myDate | date : "fullDate"}}</h2>
+    <h2>{{myDate | date : "shortTime"}}</h2>
+    <h2>{{myDate | date : "mediumTime"}}</h2>
+</body>
+</html>

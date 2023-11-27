@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <script src="angular.min.js"></script>
+    <script src="module2.js"></script>
+</head>
+<body ng-controller="MyController">
+    <input type="button" value="click me" ng-click="number=number+1">
+    <br><br>
+    <h2>{{number}}</h2>
+    <br><br>
+    <input type="button" value="click me to check functionality" ng-mousedown="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+    <input type="button" value="click me to check function" ng-mouseup="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+    <input type="button" value="click me double" ng-dblclick="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+
+    <input type="button" value="click me mouseover" ng-mouseover="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+
+    <input type="button" value="click me mouseenter" ng-mouseenter="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+    <input type="button" value="click me mousemove" ng-mousemove="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+
+    <input type="button" value="click me mouseleave" ng-mouseleave="myFunction()">
+    <br><br>
+    <h2>{{number}}</h2>
+</body>
+</html>
