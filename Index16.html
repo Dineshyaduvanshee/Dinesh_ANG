@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js"></script>
+    <script src="module9.js"></script>
+</head>
+<body ng-controller="myController">
+    <h2>{{ url }}</h2>
+    <h2>{{ protocol }}</h2>
+    <h2>{{ host }}</h2>
+    <h2>{{ port }}</h2>
+    <h1>{{count}}</h1>
+    <h1>{{ dateAndTime | date:"dd-mm-y hh:mm:ss a"}}</h1>
+</body>
+</html>

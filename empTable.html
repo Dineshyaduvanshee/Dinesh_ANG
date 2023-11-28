@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This file is included by index15.html </title>
+    <script src="angular.min.js"></script>
+    <script src="module8.js"></script>
+</head>
+<body ng-controller="myController">
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="student in students">
+                <td>{{student.name}}</td>
+                <td>{{student.gender}}</td>
+                <td>{{student.class}}</td>
+    
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
