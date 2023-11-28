@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LimitTo Filter in angular js</title>
+    <script src="angular.min.js"></script>
+    <script src="module7.js"></script>
+</head>
+<body ng-controller="myController">
+    <input type="text" placeholder="Enter a  number for filter to string" ng-model="str">
+    <h1>{{name|limitTo:str}}</h1>
+</body>
+</html>

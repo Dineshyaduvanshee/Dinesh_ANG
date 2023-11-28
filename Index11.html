@@ -13,6 +13,11 @@
         {{fruit}}
     </ul>
     <br>
+    <input type="text" placeholder="Enter a number for fruit for filter" ng-model="num1">
+    <ul ng-repeat="fruit in fruits | limitTo:num1">
+        {{fruit}}
+    </ul>
+    <br>
     <input type="text" placeholder="Enter a Student Name" ng-model="student">
     
     <table border="1">
@@ -22,6 +27,21 @@
             <th>Class</th>
         </tr>
         <tr ng-repeat="std in students | filter:student:true">
+            <td>{{std.name}}</td>
+            <td>{{std.gender}}</td>
+            <td>{{std.class}}</td>
+        </tr>
+
+    </table>
+    <br>
+    <input type="text" placeholder="Enter a number : " ng-model="number">
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+        </tr>
+        <tr ng-repeat="std in students | limitTo:number">
             <td>{{std.name}}</td>
             <td>{{std.gender}}</td>
             <td>{{std.class}}</td>
@@ -56,8 +76,7 @@
             <td>{{std.name}}</td>
             <td>{{std.gender}}</td>
             <td>{{std.class}}</td>
-        </tr>
-        
+        </tr>   
     </table>
 </body>
 </html>
