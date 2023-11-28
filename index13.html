@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NG-SHOW AND NG-HIDE DIRECTIVE IN ANGULAR JS</title>
+    <script src="angular.min.js"></script>
+    <script src="module7.js"></script> <!-- Fix the typo here -->
+</head>
+
+<body ng-controller="myController">
+    <p><input type="checkbox" ng-model="check">Show</p>
+    <div ng-show="check">
+        <!--<h1>This is a div</h1>
+        <h2>This is the second div</h2>--> <!-- Fix the typo here -->
+        <img src="on.png" height="100" width="100">
+    </div>
+    <br>
+    <p><input type="checkbox" ng-model="check">Hide</p>
+    <div ng-hide="check">
+        <!--<h1>This is a div</h1>
+        <h2>This is the second div</h2>--> <!-- Fix the typo here -->
+        <img src="off.png" height="100" width="100">
+    </div>
+</body>
+
+</html>
+
+

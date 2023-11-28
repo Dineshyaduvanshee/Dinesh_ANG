@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ng-show and ng-hide</title>
+    <script src="angular.min.js"></script>
+    <script src="module7.js"></script>
+</head>
+<body ng-controller="myController">
+    <p><input type="checkbox" ng-model="check">Hide Salary</p>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Age</th>
+                <th ng-hide="check">salary</th>
+                <th ng-show="check">salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="emp in Employee">
+                <td>{{emp.name}}</td>
+                <td>{{emp.designation}}</td>
+                <td>{{emp.age}}</td>
+                <td ng-hide="check">{{emp.salary}}</td>
+                <td ng-show="check"> **** </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
