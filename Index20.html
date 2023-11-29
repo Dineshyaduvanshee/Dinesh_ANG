@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATING SINGLE PAGE APPLICATION IN ANGULAR-JS</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="route.js"></script>
+    <script src="module13.js"></script>
+</head>
+<body ng-controller="myController">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h3 class="jumbotron bg-dark text-white text-center">MY FIRST SINGLE PAGE APPLICATION IN ANGULAR-JS</h3>
+            </div>
+        </div>
+        <div class="row" style="margin-top: -5px;">
+            <div class="col-sm-3">
+                <div class="bg-dark" style="height: 500px;">
+                    <ul style="list-style: none; font-size: 30px;">
+                        <li><a href="#!teacher">Teachers</a></li>
+                        <li><a href="#!student">Students</a></li>
+                        <li><a href="#!course">Courses</a></li>
+                        <li><a href="#!gallery">Gallery</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-9">
+                <div class="ng-view">
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="card card-body bg-dark text-white text-center">
+                    <h4>All Right reserved to Quantique meta data pvt. ltd. &copy;2023</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

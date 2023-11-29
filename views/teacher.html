@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="MyMod">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <script src="/angular.min.js"></script>
+    <script src="/module13.js"></script>
+</head>
+<body ng-controller="teacher_ctr">
+    <table class="table table-hover bg-dark text-white table-striped table-responsive table-borderd">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Qualification</th>
+            </tr>
+            </thead>
+            <tbody ng-controller="teacher_ctr">
+                <tr ng-repeat="teacher in teachers">
+                    <td>{{teacher.name}}</td>
+                    <td>{{teacher.age}}</td>
+                    <td>{{teacher.qualification}}</td>
+                </tr>
+            </tbody>
+    </table>
+</body>
+</html>
